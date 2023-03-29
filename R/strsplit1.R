@@ -1,17 +1,14 @@
-#' Get the split strings
+#' Split a string
 #'
-#' Take a long string and split the string by a specific split
+#' @param x A character vector with one element.
+#' @param split What to split on.
 #'
-#' @param x a string
-#' @param split a string that will split x from
-#'
-#' @return a vector of strings
+#' @return A character vector.
 #' @export
 #'
 #' @examples
-#' strsplit1("you know nothing john snow"," ")
-#'
-
+#' x <- "alfa,bravo,charlie,delta"
+#' strsplit1(x, split = ",")
 strsplit1 <- function(x, split) {
   strsplit(x, split = split)[[1]]
 }
